@@ -90,7 +90,20 @@
       "descricao": "3,6 mil visualizações",
       "url": "https://www.youtube.com/embed/mXtDHJRVoJo",
       "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg"
+    },
+    {
+      "titulo": "Next.js é o melhor framework com Mario Souto",
+      "descricao": "82 mil visualizações.",
+      "url": "https://www.youtube.com/embed/7x4_HNC4Uu4",
+      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "id": 14
+    },
+    {
+      "titulo": "Conhecendo o NestJS",
+      "descricao": "23 mil visualizações.",
+      "url": "https://www.youtube.com/embed/YHpG6t91oW8",
+      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "id": 15
     }
-    
   ]
 }
