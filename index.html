@@ -22,8 +22,10 @@
 
             <div class="cabecalho__pesquisar">
 
-                <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input">
-                <button class="pesquisar__botao">
+                <form>
+                    <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input" data-pesquisa>
+                    <button class="pesquisar__botao" type="submit" data-botao-pesquisa>
+                </form>
 
             </div>
 
@@ -82,6 +84,8 @@
     </ul>
 
     <script src="./js/showVideos.js" type="module"></script>
+    <script src="./js/searchVideo.js" type="module"></script>
+
 </body>
 
 </html>
