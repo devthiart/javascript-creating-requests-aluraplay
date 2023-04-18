@@ -10,9 +10,13 @@ async function createVideo(event) {
   const title = document.querySelector('[data-titulo]').value;
   const description = Math.floor(Math.random() * 100).toString();
 
-  await APIConnect.createVideo(title, description, url, image);
-
-  window.location.href = "../pages/envio-concluido.html";
+  try {
+    await APIConnect.createVideo(title, description, url, image);
+  
+    window.location.href = "../pages/envio-concluido.html";
+  } catch (error) {
+    alert(error);
+  }
 }
 
 form.addEventListener('submit', event => createVideo(event));

@@ -18,6 +18,10 @@ async function searchVideo(event) {
     );
   });
 
+  if(search.length == 0) {
+    list.innerHTML = `<h2 class="mensagem__titulo">Não existem vídeos com este termo.</h2>`
+  }
+
 }
 
 const searchButton = document.querySelector('[data-botao-pesquisa]');

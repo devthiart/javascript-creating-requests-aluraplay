@@ -21,12 +21,16 @@ function createCard(title, description, url, image) {
 }
 
 async function listVideos() {
-  const apiList = await APIConnect.listVideos();
-  apiList.forEach(
-    element => list.appendChild(
-      createCard(element.titulo, element.descricao, element.url, element.imagem)
-    )
-  );
+  try {
+    const apiList = await APIConnect.listVideos();
+    apiList.forEach(
+      element => list.appendChild(
+        createCard(element.titulo, element.descricao, element.url, element.imagem)
+      )
+    );
+  } catch {
+    list.innerHTML = `<h2 class="mensagem__titulo">Não foi possível carregar a lista de vídeos.</h2>`
+  }
 }
 
 listVideos();
